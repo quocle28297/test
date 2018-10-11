@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Homepage.master.cs" Inherits="WebBanDTDD.Homepage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Di Động Thông Minh</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="width:100%">
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td colspan="3">
+                    <asp:Image ID="Image1" runat="server" Height="200px" ImageUrl="~/image/header.jpg" Width="100%" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:15%">
+                    <asp:Label ID="label1" runat="server"><h3>Hãng Điện Thoại</h3></asp:Label>
+
+                    <asp:DataList ID="DataList1" runat="server" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" >
+                        <ItemTemplate>
+                            
+                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" Text='<%# Eval("TENLOAI") %>' CommandArgument='<%# Eval("MALOAI") %>'></asp:LinkButton>
+                        </ItemTemplate>
+                    </asp:DataList>
+                </td>
+                <td style="width:60%">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td style="width:25%">
+                    <asp:Login ID="Login1" runat="server" OnAuthenticate="Login1_Authenticate">
+                    </asp:Login>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/image/footer.png" Height="200px" Width="100%"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+        
+    </form>
+</body>
+</html>
