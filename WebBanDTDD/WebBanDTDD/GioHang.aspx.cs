@@ -11,7 +11,7 @@ namespace WebBanDTDD
 {
     public partial class GioHang : System.Web.UI.Page
     {
-        string connect = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\STUDY\ASP_webform\WebBanDTDD\WebBanDTDD\App_Data\QLDTDD.mdf;Integrated Security=True";
+        string connect = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\GitHub\test\WebBanDTDD\WebBanDTDD\App_Data\QLDTDD.mdf;Integrated Security=True";
 
         protected void Page_Load(object sender, EventArgs e)
         {
