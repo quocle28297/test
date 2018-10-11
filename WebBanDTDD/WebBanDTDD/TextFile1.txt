@@ -5,4 +5,9 @@ Trung Anh  in here again:D
 =======
 Quoc is real
 >>>>>>> 790223d172391a39d86b88b72f1d910ba56f62ec
+<<<<<<< HEAD
 Trung Anh  in here2 
+=======
+
+Quoc is real 2
+>>>>>>> 93ee3d744f584cbf99ac4470b0e9c6f3c3db11e4
